@@ -2,7 +2,7 @@
   "name": "test",
   "type": "module",
   "main": "dist-electron/main.js",
-  "version": "v1.0.1",
+  "version": "v1.0.2",
   "private": true,
   "scripts": {
     "build": "nuxt build",

@@ -59,9 +59,7 @@ const stopWebServer = async () => {
 }
 
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    stopWebServer().then(() => app.quit());
-  }
+  stopWebServer().then(() => app.quit());
 });
 
 const createWindow = () => {
