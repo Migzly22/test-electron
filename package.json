@@ -1,0 +1,30 @@
+{
+  "name": "test",
+  "type": "module",
+  "main": "dist-electron/main.js",
+  "version": "v1.0.1",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "start": "electron .",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "build:mac": "bun run generate && electron-builder --mac",
+    "build:mac2": "bun run build && electron-builder --mac"
+  },
+  "dependencies": {
+    "@ccci/micro-server": "^1.0.238",
+    "nuxt": "^4.2.0",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "electron": "38.2.2",
+    "electron-builder": "^26.0.12",
+    "nuxt-electron": "^0.7.0",
+    "vite-plugin-electron": "^0.29.0",
+    "vite-plugin-electron-renderer": "^0.14.6"
+  }
+}
